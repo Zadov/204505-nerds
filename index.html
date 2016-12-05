@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="css/hue.css">
+		<title>Нёрдс</title>
+	</head>
+	<body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+	<!-- Блок со списком сайтов -->
+		<div class="site_list">
+			<button class="open_site_list"><span class="line"></span></button>
+			<a href="http://myawesomesite.ru/" class="home_link">Home</a>
+			<ul>
+				<li><a href="../sedona/index.html">Sedona</a></li>
+				<li><a href="nerds/index.html">Nerds</a></li>
+				<li><a href="gllacy/index.html">Gllacy</a></li>
+				<li><a href="device/index.html">Device</a></li>
+			</ul>
+		</div>
 
-  </body>
+	<!-- Шапка сайта со слайдером -->
+		<header class="main-header">
+			<div class="container">
+				<h1 class="logo-h1">
+					<span class="visually_hidden">Nerds</span>
+					<img src="" alt="" height="65" width="160">
+				</h1>
+
+				<nav class="main-navigation">
+					<ul class="main-navigation__list site-navigation">
+						<li><a href="#">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li><a href="#">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+
+					<ul class="main-navigation__list user-navigation">
+						<li><a class="user-navigation__basket" href="#">Корзина</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="feature container">
+			
+			<label class="feature_label">
+				<input id="feature_radio_1" type="radio" name="feature_radio">
+			</label>
+
+			<label class="feature_label">
+				<input id="feature_radio_2" type="radio" name="feature_radio">
+			</label>
+
+			<label class="feature_label">
+				<input id="feature_radio_3" type="radio" name="feature_radio">
+			</label>
+
+			<section class="feature feature_1">
+				<h2 class="feature_title"></h2>
+				<p class="feature_info"></p>
+				<a class="btn feature_btn" href="#"></a>
+			</section>
+
+			<section class="feature feature_2">
+				<h2 class="feature_title"></h2>
+				<p class="feature_info"></p>
+				<a class="btn feature_btn" href="#"></a>
+			</section>
+
+			<section class="feature feature_3">
+				<h2 class="feature_title"></h2>
+				<p class="feature_info"></p>
+				<a class="btn feature_btn" href="#"></a>
+			</section>
+
+		</div>
+		
+	<!-- Основное содержимое -->
+		<main>
+			<div class="container">
+				
+			</div>
+		</main>
+		
+		<div class="map_form">
+			
+		</div>
+
+	<!-- Подвал сайта -->
+		<footer>
+			<div class="container">
+				
+			</div>
+		</footer>
+		<script src="js/script.js"></script>
+	</body>
 </html>
