@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/style.min.css">
 		<link rel="stylesheet" href="css/hue.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<title>Нёрдс</title>
 	</head>
 	<body>
@@ -23,12 +24,9 @@
 	<!-- Шапка сайта со слайдером -->
 		<header class="main-header">
 			<div class="container">
-				<h1 class="logo-h1">
-					<span class="visually_hidden">Nerds</span>
-					<img src="" alt="" height="65" width="160">
-				</h1>
-
 				<nav class="main-navigation">
+					<img class="logo" src="img/logo.png" alt="" height="65" width="160">
+
 					<ul class="main-navigation__list site-navigation">
 						<li><a href="#">Студия</a></li>
 						<li><a href="#">Клиенты</a></li>
@@ -43,38 +41,46 @@
 			</div>
 		</header>
 
-		<div class="feature container">
-			
-			<label class="feature_label">
-				<input id="feature_radio_1" type="radio" name="feature_radio">
-			</label>
+		<div class="feature">
+			<div class="container">
+				<div class="feature__radio-block">
+					<label class="feature__label">
+						<input id="feature__radio-1" type="radio" name="feature_radio">
+					</label>
 
-			<label class="feature_label">
-				<input id="feature_radio_2" type="radio" name="feature_radio">
-			</label>
+					<label class="feature__label">
+						<input id="feature__radio-2" type="radio" name="feature_radio">
+					</label>
 
-			<label class="feature_label">
-				<input id="feature_radio_3" type="radio" name="feature_radio">
-			</label>
+					<label class="feature__label">
+						<input id="feature__radio-3" type="radio" name="feature_radio">
+					</label>
+				</div>
 
-			<section class="feature feature_1">
-				<h2 class="feature_title"></h2>
-				<p class="feature_info"></p>
-				<a class="btn feature_btn" href="#"></a>
-			</section>
+				<section class="feature__section feature__section-1">
+					<div class="feature__left-block">
+						<h2 class="feature__title">Долго, дорого, скрупулезно.</h2>
+						<p class="feature__info">Математически выверенный дизайн для&nbsp;вашего&nbsp;сайта&nbsp;или&nbsp;мобильного приложения.</p>
+						<a class="btn feature__btn" href="#">Узнать больше</a>
+					</div>
+				</section>
 
-			<section class="feature feature_2">
-				<h2 class="feature_title"></h2>
-				<p class="feature_info"></p>
-				<a class="btn feature_btn" href="#"></a>
-			</section>
+				<section class="feature__section feature__section-2">
+					<div class="feature__left-block">
+						<h2 class="feature__title">Любим математику как никто другой</h2>
+						<p class="feature__info">Никакого креатива, только математические формулы для&nbsp;расчета&nbsp;идеальных&nbsp;пропорций.</p>
+						<a class="btn feature__btn" href="#">Узнать больше</a>
+					</div>
+				</section>
 
-			<section class="feature feature_3">
-				<h2 class="feature_title"></h2>
-				<p class="feature_info"></p>
-				<a class="btn feature_btn" href="#"></a>
-			</section>
-
+				<section class="feature__section feature__section-3">
+					<div class="feature__left-block">
+						<h2 class="feature__title">Только ночь, только хардкор</h2>
+						<p class="feature__info">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
+						<a class="btn feature__btn" href="#">Узнать больше</a>
+					</div>
+				</section>
+			</div>
 		</div>
 		
 	<!-- Основное содержимое -->
