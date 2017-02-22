@@ -4,6 +4,14 @@ $red: #fb565a;
 $green: #00ca74;
 $yellow: #efc849;
 
+%clearfix {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
 // site styles
 
 body {
@@ -20,13 +28,6 @@ body {
 	padding: 0 20px;
 }
 
-.clearfix::after {
-	content: '';
-	display: table;
-	clear: both;
-	
-}
-
 .visually_hidden {
 	display: none;
 }
@@ -41,7 +42,7 @@ body {
 
 .btn {
 	display: block;
-	padding-top: 15px;
+	padding-top: 17px;
 	padding-bottom: 15px;
 	border-radius: 3px;
 	background-color: $red;
@@ -117,7 +118,7 @@ body {
 
 	&__info {
 		margin-top: 26px;
-		margin-bottom: 40px;
+		margin-bottom: 39px;
 		padding: 0;
 	}
 	
@@ -126,6 +127,7 @@ body {
 	}
 	
 	&__section {
+		display: none;
 		width: 100%;
 		min-height: 430px;
 		background-repeat: no-repeat;
@@ -144,4 +146,53 @@ body {
 	&__section-3 {
 		background-image: url('../img/feature-3.jpg');
 	}
+
+	&_active {
+		display: block;
+	}
+}
+
+/*Products block*/
+
+.products-wrapper {
+	@extend %clearfix;
+}
+
+.product {
+	float: left;
+	max-width: 300px;
+	margin-top: 80px;
+	margin-right: 100px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&__button {
+		width: 160px;
+		margin-bottom: 80px;
+
+		&_app {
+			background-color: $green;
+		}
+
+		&_presentation {
+			background-color: $yellow;
+		}
+	}
+
+	&__title {
+		margin-top: 19px;
+		margin-bottom: 16px;
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 30px;
+		text-transform: uppercase;
+	}
+	
+	&__info {
+		margin-bottom: 32px;
+		padding-right: 40px;
+	}
+
 }
