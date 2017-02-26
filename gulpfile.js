@@ -24,6 +24,7 @@ gulp.task('sass', function () {
     // "space-before-opening-brace": "\n" на "space-before-opening-brace": "1"
     // для того, чтобы перед открывающими скобками ставился пробел, а не перенос
     // на новую строку
+    // и "block-indent": "    " на "block-indent": "  " для того, чтобы было 2 пробела, а не 4
     .pipe(csscomb())
     .pipe(gulp.dest('css'))
     .pipe(cssmin())
